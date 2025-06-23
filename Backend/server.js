@@ -9,9 +9,9 @@ const port = 3000;
 // PostgreSQL database connection
 const pool = new Pool({
     user: 'postgres', 
-    host: 'localhost',
+    host: 'postgres',
     database: 'payslip_db', 
-    password: 'root', 
+    password: 'admin321', 
     port: 5432,
 });
 
@@ -114,5 +114,5 @@ app.get('/api/payslips/:empCode', async (req, res) => {
 
 // Start the server
 app.listen(port, () => {
-    console.log(`Server running on http://localhost:${port}`);
+    console.log(`Server running on http://13.48.58.183:${port}`);
 });
